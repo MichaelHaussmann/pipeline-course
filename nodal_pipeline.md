@@ -6,6 +6,7 @@
 * [Flow based programming](https://en.wikipedia.org/wiki/Flow-based_programming)
 * [nodes.io/story](https://nodes.io/story) 
 * [Visual Programming Codex](https://github.com/ivanreese/visual-programming-codex) - Waypoints to the past and future of visual programming. A reference.
+* [awesome-workflow-engines](https://github.com/meirwah/awesome-workflow-engines) - A curated list of awesome open source workflow engines
 
 ### CG & VFX
 
