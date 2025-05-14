@@ -54,6 +54,7 @@ Ressources for the CG Pipeline workshop
 * [Carbon](https://carbon.now.sh) - Create and share beautiful images of your source code.
 * [termynal.js](https://github.com/ines/termynal) - A lightweight and modern animated terminal window
 * Code documentation: industry standard is [readthedocs with Sphinx](https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html) and [autodoc](https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html), I recommand with [markdown](https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html#using-markdown-with-sphinx) and [Google style docstring](https://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html#docstrings).
+* [excalidraw](https://excalidraw.com) - Collaborative whiteboard
 
 ###   
 ## Coding in DCCs
