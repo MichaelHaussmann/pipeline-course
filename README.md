@@ -26,8 +26,8 @@ Ressources for the CG Pipeline workshop
 * [Blue Sky Studio Technology blog](https://medium.com/blue-sky-tech-blog) - Great articles about the Blue Sky Pipeline, including ["Naming"](https://medium.com/blue-sky-tech-blog/non-noxious-nomenclature-977a173c6826), [Gamification in QC](https://medium.com/blue-sky-tech-blog/introducing-achievements-into-qc-6fee943324df), and [Web Service Techs](https://medium.com/blue-sky-tech-blog/conduit-services-archetype-598d4fa316e9)
 * [realpython.com](https://realpython.com/) - High quality, understandable, in-depth Python tutorials, from beginner to advanced level.
   Video tutorials are for paid-members, but there are many free written tutorials.  
-  Log in with your github account.  
-  
+  Log in with your github account.
+    
 ###
 ## Pipeline videos
 
@@ -75,6 +75,8 @@ Ressources for the CG Pipeline workshop
 
 ## Python reads  
 
+### Tutorials
+
 * [generators](https://realpython.com/introduction-to-python-generators)
 * [decorators](https://realpython.com/primer-on-python-decorators)
 * [typing](https://realpython.com/python-type-checking)
@@ -86,6 +88,9 @@ Ressources for the CG Pipeline workshop
 * [documentation](https://realpython.com/documenting-python-code)
 * [python code quality](https://realpython.com/python-code-quality/)
 
+### References
+
+* [Google python style guide](https://google.github.io/styleguide/pyguide.html) 
 
 ## Topics of interest 
 
