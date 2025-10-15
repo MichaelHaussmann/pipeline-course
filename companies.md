@@ -1,6 +1,10 @@
 
 # CG & VFX companies 
 
+## Worldwide 
+
+* [3DVF Studio Map](https://3dvf.com/studio/) - 1000+ Studios
+
 ## With headquarter in Montpellier
 
 * [Dwarf Animation Studio](https://www.dwarfanimation.com) - CG productions & Services (51-200)
