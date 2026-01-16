@@ -56,6 +56,7 @@ Ressources for the CG Pipeline workshop
 * [termynal.js](https://github.com/ines/termynal) - A lightweight and modern animated terminal window
 * Code documentation: industry standard is [readthedocs with Sphinx](https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html) and [autodoc](https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html), I recommand with [markdown](https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html#using-markdown-with-sphinx) and [Google style docstring](https://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html#docstrings).
 * [excalidraw](https://excalidraw.com) - Collaborative whiteboard
+* [vfxstack.dev](https://vfxstack.dev) - Simple online pipeline design tool
 
 ###   
 ## Coding in DCCs
