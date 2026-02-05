@@ -2,7 +2,8 @@
 ##   
 ## USD
 
-* [USD Official documentation](https://graphics.pixar.com/usd/release/index.html) - Official Documentation from Pixar
+* [AOUSD: what is USD ?](https://aousd.org/explainer-series-what-is-openusd/) - A one page overview
+* [USD Official documentation](https://openusd.org/release/index.html) - Official Documentation from Pixar / OpenUSD
 * [Academy Software Foundation USD Working Group](https://wiki.aswf.io/display/WGUSD) - Resources, references and discussions
 * [Learn USD](https://learnusd.github.io) - Online tutorial
 * [USD Survival Guide](https://lucascheller.github.io/VFX-UsdSurvivalGuide/) - Onboarding guide to USD for software developers and pipeline TDs
