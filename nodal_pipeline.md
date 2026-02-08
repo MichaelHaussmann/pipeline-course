@@ -50,6 +50,11 @@
 
 * [Kirpi](https://www.youtube.com/channel/UCHOWmmBJbFg31C7ObE8aALg/videos) - C++ Visual Programming editor for DCCs
 
+### Misc
+
+* [Dagu](https://daguit.dev) - Self-contained, lightweight workflow engine with a built-in Web UI and YAML config
+
+
 ### Dot Language
 
 * [Wikipedia: DOT language](https://en.wikipedia.org/wiki/DOT_(graph_description_language)) - Low level graph description language
