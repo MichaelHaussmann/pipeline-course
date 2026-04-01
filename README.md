@@ -67,8 +67,8 @@ Ressources for the CG Pipeline workshop
 * [Pymel Tutorial](https://www.tokeru.com/cgwiki/index.php?title=PymelTutorial) - Basic nice pymel turorial (on the legendary Matt Estela Cgwiki)
 
 ### Houdini
-* [Houdini Python on the Tokeru CGwiki](https://www.tokeru.com/cgwiki/index.php?title=HoudiniPython) - Very well done and famous Wiki about Houdini
-* [Side FX python-scripting video tutorial](https://www.sidefx.com/tutorials/python-scripting)
+* [Houdini Python on the Tokeru CGwiki](https://tokeru.com/cgwiki/HoudiniPython.html) - Well done, with a lot of code examples
+* [Side FX python-scripting video tutorial](https://www.sidefx.com/tutorials/python-scripting) - Official SideFX video
 * [Python in Houdini by Deborah Fowler](https://www.deborahrfowler.com/PythonResources/PythonInHoudini.html)
 * [MIX Training: "Coding an Asset Browser"](https://www.youtube.com/watch?v=FoEykOrdgt4&list=PLAnSvhIvNZCtUz7-yOrBugM59Y_jixwWR) - Free in depth video tutorial series about creating a Qt HDRI asset browser in Houdini
 * [Rebelway: Introduction To Python For Houdini](https://www.youtube.com/watch?v=3QGQ-Wr-4ko) - Free 2 hour video about the basics of python for Houdini
