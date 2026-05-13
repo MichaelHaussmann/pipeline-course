@@ -9,6 +9,7 @@
 
 # To be sorted
 
+- [VES on set](https://ves-on-set-data.org/dashboard/?tab=Introduction) - VES VFX Data Collection and Usage Guide
 - [VFX Careers: Pipeline Developer](https://www.youtube.com/watch?v=zdhGMFBfFt8) - Video, ASWF, 2021
 
 - [Bernard Pipeline Engine](https://cgwhy.net/podcast/cgwhy-035-bernard) - https://www.bernardengine.com, French
