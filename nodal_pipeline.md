@@ -53,6 +53,7 @@
 ### Misc
 
 * [Dagu](https://daguit.dev) - Self-contained, lightweight workflow engine with a built-in Web UI and YAML config
+* [Open Job Description Specifications](https://github.com/OpenJobDescription/openjd-specifications) - Render farm abstraction 
 
 
 ### Dot Language
