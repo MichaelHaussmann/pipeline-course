@@ -2,7 +2,7 @@
 
 - repo name
   - folder named `python` containing
-    - the package name: same name as repo
+    - the **package name**: same name as repo
       - cli > commands (using rez alias to run)
       - conf > configuration
       - core > core
