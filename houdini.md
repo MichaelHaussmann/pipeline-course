@@ -22,6 +22,14 @@
 * create a Node
 * set a color
 * connect nodes
+* create a test crag sop node
+* create a rop alembic
+
+Create a "Piped" rop alembic
+* on the rop alembic, in python
+* create a string parameter called "asset" (label: "Asset")
+* create an integer parameter called "version"
+* update the "filename" parameter so it saves "$HIP/<asset>_v<001>.abc"
 
 ### Events
 
@@ -31,24 +39,11 @@
 
 # Code snippets
 
+- Add a parameter
 ```python
-
-global_scale = 'GLOBAL_SCALE'
-try:
-
-      folder = hou.FolderParmTemplate('folder', 'Pipeline')
-      parm = hou.FloatParmTemplate(global_scale, global_scale, 1)
-      parm.setDefaultValue((cache_scale, 0))
-      parm.setMaxValue(2)
-      folder.addParmTemplate(parm)
-
-      group = in_node.parmTemplateGroup()
-      group.append(folder)
-
-      in_node.setParmTemplateGroup(group)
-
-  except hou.OperationFailed:
-
-      log.warn('[init_IN] Attribute {} was not created.'.format(global_scale))
-
+box = hou.node('/obj/coding/box1')
+parm = hou.StringParmTemplate("example", "My Example Parm", 1, default_value=("default",))
+group = box.parmTemplateGroup() 
+group.append(parm) 
+box.setParmTemplateGroup(group) 
 ```
