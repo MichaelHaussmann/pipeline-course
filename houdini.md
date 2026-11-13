@@ -39,30 +39,95 @@ Create a "Piped" rop alembic
 
 # Code snippets
 
-- Add a parameter
+- create nodes and render rop
 ```python
-box = hou.node('/obj/coding/box1')
-parm = hou.StringParmTemplate("example", "My Example Parm", 1, default_value=("default",))
-group = box.parmTemplateGroup() 
-group.append(parm) 
-box.setParmTemplateGroup(group) 
+geo = hou.node("/obj/geo1")
+
+if geo:
+    print("Exists already")
+else:
+    geo = hou.node("/obj").createNode("geo", node_name="geo1")
+
+# print(geo)
+crag = geo.createNode("testgeometry_crag")
+
+# create then connect (longer code)
+# abc = geo.createNode("rop_alembic")
+# abc.setInput(0, crag)
+# abc.moveToGoodPosition()  
+
+# create connected
+abc = crag.createOutputNode("rop_alembic")
+
+# render function 
+abc.render(frame_range=(1, 5))
+
+# or push button
+# abc.parm("execute").pushButton()
 ```
 
+- Add parameters
+```python
+node = hou.node('/obj/coding/rop_alembic1')
+
+folder = hou.FolderParmTemplate('folder', 'Pipeline')
+asset_parm = hou.StringParmTemplate("asset", "Asset", 1, default_value=("",))
+version_parm = hou.IntParmTemplate("version", "Version", 1, default_value=(1,))
+
+group = node.parmTemplateGroup() 
+folder.addParmTemplate(asset_parm)
+folder.addParmTemplate(version_parm)  
+# group.append(asset_parm) 
+# group.append(version_parm)
+
+group.append(folder)
+node.setParmTemplateGroup(group)     
+```
+
+- set python expression on rop filename (using previous parameters
+```python
+node = hou.node('/obj/coding/rop_alembic1')
+
+filename_parm = node.parm("filename")
+print(filename_parm)   
+
+expression = 'parm("asset").eval() + "_v" + parm("version").evalAsString()'
+filename_parm.setExpression(expression, language=hou.exprLanguage.Python)     
+```
+
+- On Created
+In a file in `$HOUDINI_PATH/scripts/oncreated.py`
+```python
+print("Node Created")
+
+node = kwargs['node']
+node_type = kwargs['type']
+
+print(node)
+print(node_type)
+
+if node_type.name() == "box":
+	node.setColor(hou.Color((0.2, 0.8, 0.2)))
+	print(f'Set color of "{node.path()}"')
+```
+
+
 - UI with qtpy
-  
+Install PySide6, Qtpy  
+Create `window.ui` file with `venv\Lib\site-packages\PySide6\designer.exe`  
 ```python
 
 import qtpy
 from qtpy import QtCore, QtWidgets, QtGui
 
-ui_path = os.path.join(os.path.dirname(__file__), "qt/browser.ui")
+ui_path = os.path.join(os.path.dirname(__file__), "qt/window.ui")
 
-class Browser(QtWidgets.QMainWindow):
+class Window(QtWidgets.QMainWindow):
 
     # cb = QtWidgets.QApplication.clipboard()  # exemple de clipboard
 
     def __init__(self):
-        super(Browser, self).__init__()
+        super(Window, self).__init__()
 
         # For some ominous reason, this does not work:
         # qtpy.uic.loadUi(ui_path, self)
