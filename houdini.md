@@ -116,35 +116,46 @@ if node_type.name() == "box":
 Install PySide6, Qtpy  
 Create `window.ui` file with `venv\Lib\site-packages\PySide6\designer.exe`  
 ```python
+import os
 
 import qtpy
+import sys
 from qtpy import QtCore, QtWidgets, QtGui
 
-ui_path = os.path.join(os.path.dirname(__file__), "qt/window.ui")
+ui_path = os.path.join(os.path.dirname(__file__), "window/ui/window.ui")
 
-class Window(QtWidgets.QMainWindow):
+print(ui_path)
+print(os.path.exists(ui_path))
+
+class MyWindow(QtWidgets.QMainWindow):
 
     # cb = QtWidgets.QApplication.clipboard()  # exemple de clipboard
 
     def __init__(self):
-        super(Window, self).__init__()
+        super(MyWindow, self).__init__()
 
-        # For some ominous reason, this does not work:
-        # qtpy.uic.loadUi(ui_path, self)
         from qtpy.uic import loadUi
         loadUi(ui_path, self)
-        self.setWindowTitle(f"{browser_title} - Browser")
 
-        # les objets du ui sont accessibles via self
-        self.publish_cb.setText('publish')
-        self.work_cb.setText('work')
+        self.setWindowTitle("Hello and Welcome")
+
+        self.ok_pb.clicked.connect(self.print_line)
+
+
+    def print_line(self):
+        print("hello")
+        print(self.main_le)
 
 
 if __name__ == "__main__":
+
     myApp = QtWidgets.QApplication(sys.argv)
-    myWindow = Window()
+
+    myWindow = MyWindow()
     myWindow.show()
 
     sys.exit(myApp.exec())
+
+
 ```
 
